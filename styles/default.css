@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap');
+:root {
+    --primary: rgb(250, 250, 250);
+    --secondary: #fff;
+    --tertiary: #F1F0EB;
+
+    --color: #000;
+    --button: #fff;
+    --textDisabled: rgb(65, 65, 65);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: var(--color);
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--primary);
+    color: var(--color);
+    overflow-x: hidden;
+}
+nav.topNavBar {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    min-height: 10vh;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    font-size: 150%;
+}
+p.nameWebsite {
+    margin-left: 5%;
+    font-weight: bold;
+}
+ul.listNavItems {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 5%;
+}
+li.navItem {
+    cursor: pointer;
+    display: table-cell; 
+  position: relative; 
+}
+ul.listNavItems a {
+    color: var(--textDisabled);
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+ul.listNavItems a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+ul.listNavItems a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+ul.listNavItems a:hover {
+    color: var(--color);
+}
+header {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    align-items: left;
+    margin-top: 6%;
+    background-image: url('../res/heroHeader.jpg');
+    background-size: cover;
+}
+div.heroContent {
+    display: flex;
+    margin: auto 0 auto 5%;
+    height: fit-content;
+    flex-direction: column;
+    width: 50vw;
+    padding: 3%;
+    border-radius: 10px;
+    color: #fff;
+}
+h1.heroTitle {
+    overflow: hidden;
+    width: fit-content;
+    font-size: 700%;
+}
+h1.heroTitle:nth-child(2) span {
+    animation-delay: 200ms;
+}
+h1.heroTitle:nth-child(3) span {
+    animation-delay: 400ms;
+}
+h1.heroTitle span {
+    display: block;
+    animation: animNavBar 0.5s ease forwards;
+    transform: translateX(-100%);
+}
+@keyframes animNavBar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    } 
+}

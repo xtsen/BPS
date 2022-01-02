@@ -32,6 +32,7 @@ nav.topNavBar {
     justify-content: space-between;
     background-color: var(--secondary);
     font-size: 150%;
+    z-index: 1000;
 }
 p.nameWebsite {
     margin-left: 5%;
@@ -109,6 +110,35 @@ h1.heroTitle span {
     animation: animNavBar 0.5s ease forwards;
     transform: translateX(-100%);
 }
+section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+div.sectionTitle {
+    display: flex;
+    font-size: 300%;
+    background-color: var(--tertiary);
+    opacity: 1;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--primary);
+    transition: all 0.3s ease;
+    color: var(--color);
+}
+div.sectionTitle:nth-child(1){
+    margin-top: 5%;
+}
+div.sectionTitle h2 {
+    position: relative;
+    margin: 4% auto;
+}
+div.sectionTitle.notVisible {
+    opacity: 0;
+}
 @keyframes animNavBar {
     0% {
         transform: translateX(-100%);
@@ -117,3 +147,7 @@ h1.heroTitle span {
         transform: translateX(0%);
     } 
 }
+/* background-image: url('.');
+background-repeat: repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */

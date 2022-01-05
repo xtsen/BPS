@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BPS</title>
+
+        <link rel="stylesheet" href="./styles/default.css">
+        <link rel="stylesheet" href="./styles/details.css">
+    </head>
+    <body onload="initDetails()">
+        <nav class='topNavBar'>
+            <p class='nameWebsite'>BPS</p>
+            <ul class='listNavItems'>
+                <li class='navItem'><a href="./index.html#news">Nouveautés</a> </li>
+                <li class='navItem'><a href="./index.html#tshirts">T-shirt</a></li>
+                <li class='navItem'><a href="./index.html#sweats">Sweat</a></li>
+                <li class='navItem'><a href="./index.html#about">A propos</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="left"></div>
+            <div class="right">
+                <h1 class="titleItem"></h1>
+                <h2 class="priceItem"></h2>
+                <div class="colors">
+                    <div class="color notAvailable red"></div>
+                    <div class="color notAvailable green"></div>
+                    <div class="color darkBlue"></div>
+                    <div class="color lightBlue"></div>
+                    <div class="color notAvailable white"></div>
+                    <div class="color pink"></div>
+                </div>
+                <div class="sizes">
+                    <div class="size notAvailable">
+                        XS
+                        <input type="checkbox" class="checkboxSize" name="checkXS" id="checkXS">
+                    </div>
+                    <div class="size">
+                        S
+                        <input type="checkbox" class="checkboxSize" name="checkS" id="checkS">
+                    </div>
+                    <div class="size">
+                        M
+                        <input type="checkbox" class="checkboxSize" name="checkM" id="checkM">
+                    </div>
+                    <div class="size notAvailable">
+                        L
+                        <input type="checkbox" class="checkboxSize" name="checkL" id="checkL">
+                    </div>
+                    <div class="size notAvailable">
+                        XL
+                        <input type="checkbox" class="checkboxSize" name="checkXL" id="checkXL">
+                    </div>
+                </div>
+                <p class="stock">En stock</p>
+                <p class="desc"></p>
+            </div>
+        </main>
+
+        <script src="./js/data.js"></script>
+        <script src="./js/intersectionObserver.js"></script>
+        <script src="./js/details.js"></script>
+    </body>
+</html>

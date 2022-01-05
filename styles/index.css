@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    align-items: left;
+    margin-top: 6%;
+    background-image: url('../res/heroHeader.jpg');
+    background-size: cover;
+}
+div.heroContent {
+    display: flex;
+    margin: auto 0 auto 5%;
+    height: fit-content;
+    flex-direction: column;
+    width: 50vw;
+    padding: 3%;
+    border-radius: 10px;
+    color: #fff;
+}
+h1.heroTitle {
+    overflow: hidden;
+    width: fit-content;
+    font-size: 700%
+}
+h1.heroTitle:nth-child(2) span {
+    animation-delay: 200ms;
+}
+h1.heroTitle:nth-child(3) span {
+    animation-delay: 400ms;
+}
+h1.heroTitle span {
+    display: block;
+    animation: animNavBar 0.5s ease forwards;
+    transform: translateX(-100%);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+div.sectionTitle {
+    display: flex;
+    font-size: 300%;
+    background-color: var(--tertiary);
+    opacity: 1;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--primary);
+    transition: all 0.3s ease;
+    color: var(--color);
+}
+div.sectionTitle:nth-child(1){
+    margin-top: 5%;
+}
+div.sectionTitle h2 {
+    position: relative;
+    margin: 4% auto;
+}
+div.sectionTitle.notVisible {
+    opacity: 0;
+}
+div.sectionContainer {
+    display: flex;
+    margin: 5% auto 0;
+    width: 80vw;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+div.cardItem {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--tertiary);
+    padding: 2%;
+    transition: all 0.3s ease;
+}
+div.cardItem:hover {
+    cursor: pointer;
+    transform: scale(1.05)
+}
+div.imgCard {
+    width: 250px;
+    height: 275px;
+    margin: 0 auto;
+    background-image: url('../res/img.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    pointer-events: none;
+}
+div.infoCard {
+    pointer-events: none;
+}
+div.infoCard h2{
+    font-weight: 500;
+}
+div.infoCard p{
+    font-size: 140%;
+    color: var(--textDisabled);
+    margin-top: 5%;
+}

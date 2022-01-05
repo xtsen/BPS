@@ -75,70 +75,6 @@ ul.listNavItems a:hover:after {
 ul.listNavItems a:hover {
     color: var(--color);
 }
-header {
-    display: flex;
-    width: 100vw;
-    height: 90vh;
-    align-items: left;
-    margin-top: 6%;
-    background-image: url('../res/heroHeader.jpg');
-    background-size: cover;
-}
-div.heroContent {
-    display: flex;
-    margin: auto 0 auto 5%;
-    height: fit-content;
-    flex-direction: column;
-    width: 50vw;
-    padding: 3%;
-    border-radius: 10px;
-    color: #fff;
-}
-h1.heroTitle {
-    overflow: hidden;
-    width: fit-content;
-    font-size: 700%;
-}
-h1.heroTitle:nth-child(2) span {
-    animation-delay: 200ms;
-}
-h1.heroTitle:nth-child(3) span {
-    animation-delay: 400ms;
-}
-h1.heroTitle span {
-    display: block;
-    animation: animNavBar 0.5s ease forwards;
-    transform: translateX(-100%);
-}
-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10%;
-}
-div.sectionTitle {
-    display: flex;
-    font-size: 300%;
-    background-color: var(--tertiary);
-    opacity: 1;
-    margin: 0 auto;
-    width: 80vw;
-    text-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-    color: var(--primary);
-    transition: all 0.3s ease;
-    color: var(--color);
-}
-div.sectionTitle:nth-child(1){
-    margin-top: 5%;
-}
-div.sectionTitle h2 {
-    position: relative;
-    margin: 4% auto;
-}
-div.sectionTitle.notVisible {
-    opacity: 0;
-}
 @keyframes animNavBar {
     0% {
         transform: translateX(-100%);
@@ -147,7 +83,3 @@ div.sectionTitle.notVisible {
         transform: translateX(0%);
     } 
 }
-/* background-image: url('.');
-background-repeat: repeat;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; */

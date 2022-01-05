@@ -1,0 +1,102 @@
+main {
+    display: flex;
+    margin: 10% auto 0;
+    width: 90vw;
+    justify-content: space-between;
+}
+div.left {
+    background-image: url('../res/img.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+div.right {
+    background-color: var(--tertiary);
+    padding: 4%;
+    width: 40vw;
+    border-radius: 10px;
+}
+h1.titleItem {
+    margin-bottom: 5%;
+}
+h2.priceItem {
+    margin-bottom: 3%;
+}
+div.colors {
+    display: flex;
+    margin-bottom: 5%;
+}
+div.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 1%;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 2%;
+    transition: all 0.3s ease;
+}
+div.color.notAvailable {
+    opacity: 0.4;
+    pointer-events: none;
+}
+div.color.red {
+    background-color: rgb(219, 101, 101);
+}
+div.color.green {
+    background-color: rgb(86, 134, 112);
+}
+div.color.darkBlue {
+    background-color: #8c97c7;
+}
+div.color.lightBlue {
+    background-color: rgb(116, 167, 200);
+}
+div.color.white {
+    background-color: white;
+}
+div.color.pink {
+    background-color: rgb(227, 198, 240);
+}
+div.color:hover {
+    transform: scale(1.1);
+}
+div.sizes {
+    display: flex;
+    margin: 0 0 5%;
+}
+div.size {
+    border: 2px solid var(--color);
+    padding: 1% 4%;
+    border-radius: 10px;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+div.size.notAvailable {
+    opacity: 0.4;
+    pointer-events: none;
+}
+div.size:hover {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+input.checkboxSize {
+    display: none;
+}
+p.stock {
+    padding: 2% 4%;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 10%;
+    transition: all 0.3s ease;
+}
+p.stock.true {
+    background-color: rgb(16, 219, 124);
+}
+p.stock.false {
+    background-color: rgb(245, 82, 82);
+}
